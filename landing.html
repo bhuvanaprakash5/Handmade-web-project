@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayesh Sachdev</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .svgl1 {
+            position: absolute;
+            top: 0;
+            height: 40vh;
+            width: 50vw; 
+            background-color: #2B1309;
+        }
+        .svgr1 {
+            position: absolute;
+            top: 0;
+            height: 40vh;
+            width: 50vw; 
+            overflow: hidden; 
+        }
+        
+        .svgl1 {
+            left: 0;
+        }
+        .svgr1 {
+            right: 0;
+        }
+        .svgl1 img {
+            display: flex;
+            width: 50vw;
+            height: 50vh; /* Ensures the image fills the entire area */
+            
+        }
+
+        
+        .svgr1 img {
+            display: flex;
+            width: 50vw;
+            height: 40vh; /* Ensures the image fills the entire area */
+        }
+
+
+        .svgmain {
+            position: absolute;
+            top: 36vh; 
+            height: 65vh; 
+            width: 100vw; 
+            background-size: cover; 
+            background-position: center; /* Center the background image */
+        }
+        
+        .svgmain img {
+            display: block;
+            width: 100%;
+            height: 100%; /* Ensures the image fills the entire area */
+        }
+
+   /* Print styles */
+   @media print {
+       @page {
+           size: A4;
+           margin: 0;
+       }
+       body, html {
+           width: 210mm; /* Width of A4 paper */
+           height: 297mm; /* Height of A4 paper */
+           overflow: hidden;
+       }
+       .svgl1, .svgr1, .svgmain {
+           display: none; /* Hide elements during print */
+       }
+       .print-container {
+           position: fixed;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+       }
+       .print-image {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+       }
+       body *:not(.print-container, .print-container *) {
+           display: none;
+       }
+   }
+</style>
+</head>
+<body>
+
+<div class="svgl1">
+   <img src="IMAGES/Group 266.png" alt="Left Top Decorative Image">
+</div>
+
+<div class="svgr1">
+   <img src="GIFS/svgr1.GIF" alt="Right Top Decorative GIF">
+</div>
+
+<div class="svgmain">
+   <img src="GIFS/svgmain.gif" alt="Main Decorative GIF">
+</div>
+<div class="print-container">
+    <img src="IMAGES/POSTER.png" alt="Print Image" class="print-image">
+ </div>
+</body>
+</html>

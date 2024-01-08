@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayesh Sachdev</title>
+    <style>
+        @font-face {
+            font-family: 'Mixal';
+            src: url('mixal/mixal-fontfamily/Mixal-DemiBold.otf') format('opentype');
+        }
+
+        body {
+            font-family: 'Mixal', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .rbox {
+            right: 50vw;
+            top: 0;
+            height: 50vh;
+            width: 50vw;
+            background-color: #37328C;
+        }
+
+        .lbox {
+            position: absolute;
+            left: 50vw;
+            top: 0;
+            height: 50vh;
+            width: 50vw;
+            background-color: #FBDD00;
+        }
+
+        .lbox11, .lbox12, .rbox11, .rbox12 {
+            position: absolute;
+            height: 25vh;
+            width: 25vw;
+            top: 50vh;
+            color: white;
+            animation-duration: 0.6s; 
+            animation-iteration-count: infinite;
+        }
+
+        .lbox11 {
+            background-color: #EF0021;
+            left: 0;
+            animation-name: flashyColorsLBox11;
+        }
+
+        .lbox12 {
+            background-color: #B5007C;
+            left: 25vw;
+            animation-name: flashyColorsLBox12;
+        }
+
+        .rbox11 {
+            background-color: #EC541D;
+            left: 50vw;
+            animation-name: flashyColorsRBox11;
+        }
+
+        .rbox12 {
+            background-color: #3764F0;
+            left: 75vw;
+            animation-name: flashyColorsRBox12;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start; 
+        }
+
+        .svg {
+            position: absolute;
+            top: 70vh; 
+            height: 30vh;
+            width: 100%;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .svg a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat606.cur), auto; 
+        }
+
+
+        .svg img {
+            width: auto; 
+            height: 100%; 
+        }
+
+        .uto, .dis {
+            font-size: 550px; 
+            font-family: 'Mixal', sans-serif;
+            font-weight: 600;
+            height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            word-wrap: break-word;
+            animation-duration: 2s; 
+            animation-iteration-count: infinite;
+        }
+
+        .uto {
+            background: linear-gradient(45deg, #ff9500, #fffbb8);
+            background-clip: text;
+            color: transparent;
+            animation-name: flashyTextUto;
+            position: absolute;
+            width: 50vw;
+            height: 75vh;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dis {
+            background: linear-gradient(45deg, #111111, #322ca8);
+            background-clip: text;
+            color: transparent;
+            animation-name: flashyTextDis;
+        }
+
+        @keyframes flashyColorsLBox11 {
+            0% { background-color: #EF0021; }
+            50% { background-color: #D596E7; }
+            100% { background-color: #EF0021; }
+        }
+
+        @keyframes flashyColorsLBox12 {
+            0% { background-color: #B5007C; }
+            50% { background-color: #ff8c00; }
+            100% { background-color: #B5007C; }
+        }
+
+        @keyframes flashyColorsRBox11 {
+             0% { background-color: #EC541D; }
+             50% { background-color: #00AEEF; }
+             100% { background-color: #EC541D; }
+        }
+
+        @keyframes flashyColorsRBox12 {
+            0% { background-color: #3764F0; }
+            50% { background-color: #78C143; }
+            100% { background-color: #3764F0; }
+        }
+
+        @keyframes flashyTextUto {
+            0% { background-size: 100% 200%; }
+            50% { background-size: 200% 100%; }
+            100% { background-size: 100% 200%; }
+        }
+
+        @keyframes flashyTextDis {
+            0% { background-size: 100% 200%; }
+            50% { background-size: 200% 100%; }
+            100% { background-size: 100% 200%; }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="lbox11"></div>
+    <div class="lbox12"></div>
+    <div class="rbox">
+        <div class="uto"><span>UTOPIAN</span></div>
+    </div>
+    <div class="rbox11"></div>
+    <div class="rbox12"></div>
+    <div class="lbox">
+        <div class="dis">DISTOPIA</div>
+    </div>
+    <div class="svg">
+        <a href="landing.html">
+            <img src="IMAGES/svgjs1.svg" alt="cta">
+        </a>
+       
+</body>
+</html>
